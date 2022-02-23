@@ -1,0 +1,51 @@
+<style>
+  ion-app{
+    background-color: white;
+  }
+  ion-menu{
+    margin-top: 50px;
+    
+  }
+  ion-header{
+    background-color:white;
+  }
+  ion-toolbar{
+    background-color: white;
+  }
+  ion-title{
+    color: #29A18D;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  ion-item{
+    color: #29A18D;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+</style>
+<ion-app>
+  <ion-menu type="push" side="start" menuId="first" contentId="main" >
+    <ion-header>
+
+      <ion-toolbar >
+        <ion-buttons slot="end">
+          <ion-icon (click)="openMenu()" name="arrow-back-outline" style="font-size: 30px;"></ion-icon>
+        </ion-buttons>
+        <ion-title><b>Healthy</b></ion-title>
+      </ion-toolbar>
+
+
+    </ion-header>
+      <ion-content>
+      <ion-menu-toggle>
+        <ion-list>
+          <ion-item [routerLink]="['/cuenta']">Mi Perfil</ion-item>
+          <ion-item>Menu Item</ion-item>
+          <ion-item>Menu Item</ion-item>
+          <ion-item>Menu Item</ion-item>
+          <ion-item>Menu Item</ion-item>
+        </ion-list>
+      </ion-menu-toggle>  
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

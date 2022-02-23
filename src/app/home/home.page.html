@@ -1,0 +1,64 @@
+
+<ion-header >
+
+  <ion-toolbar >
+
+    <ion-row >
+      <ion-col class="ion-align-items-center menu" >
+        <div >
+          <ion-buttons slot="start" >
+          <ion-menu-button autoHide="false"></ion-menu-button>
+          </ion-buttons>
+        </div >
+      </ion-col >
+        <ion-col class="ion-align-self-center titulo" >
+          <div ><ion-title class="titulo2" ><b>Healthy</b></ion-title></div>
+        </ion-col>
+      <ion-col class="ion-align-self-center home" >
+        <div  ><ion-icon name="person-outline" [routerLink]="['/cuenta']" style="font-size: 25px;"></ion-icon></div>
+      </ion-col>
+    </ion-row>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content >
+  <ion-card >
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card >
+      <div class="band">
+        <ion-button size="small" color="medium" [routerLink]="['/bandeja-entrada']" routerLinkActive="router-link-active" >Bandeja de Entrada</ion-button>
+      </div>
+  
+    <ion-card-content>
+      <ion-item-divider >
+        <ion-label>
+        
+        </ion-label>
+      </ion-item-divider>
+      <div class="caja">
+        <p style="text-align: center;">Estado Actual</p>
+        <div class="disponible">
+        
+        <ion-button size="small" fill="outline" color="dark">No Disponible</ion-button>
+        <ion-button size="small" fill="outline" color="dark">Disponible</ion-button>
+          
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
