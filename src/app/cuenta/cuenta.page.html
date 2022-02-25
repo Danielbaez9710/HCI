@@ -1,31 +1,3 @@
-<style>
-  ion-header{
-    background-color: white;
-  }
-  ion-toolbar{
-    width: 70%;margin-top:40px ; margin-left: auto;margin-right: auto;
- 
-  }
-  ion-row{
-    
-    background-color: #29A18D;border-radius: 1em;
-  }
-  .menu{
-    width: 20%;
-    color: white;
-  }
-  .titulo2{
-    font-size: 15px;
-  }
-  .home{
-    width: 20%;
-    color: white;
-  }
-  ion-title{
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-  }
-</style>
 
 
 <ion-header >
@@ -40,9 +12,9 @@
           </ion-buttons>
         </div >
       </ion-col >
-        <ion-col class="ion-align-self-center titulo" >
+      <ion-col class="ion-align-self-center titulo" >
           <div ><ion-title class="titulo2" ><b>Cuenta</b></ion-title></div>
-        </ion-col>
+      </ion-col>
       <ion-col class="ion-align-self-center home" >
         <div  ><ion-icon name="home-outline" [routerLink]="['/home']" style="font-size: 30px;"></ion-icon></div>
       </ion-col>
@@ -53,5 +25,86 @@
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Entrenador</ion-card-subtitle>
+    </ion-card-header>
+  
+    
+      <div class="cont">
+        <div class="cont1">
+          <div class="logo">
+            <ion-icon name="person-circle-sharp"></ion-icon>
+          </div>
+          <div class="text">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>4.6</p>
+          </div>
+        </div>
 
+        <div class="cont2">
+          <h2>Rodrigo Hernandez</h2>
+          <div class="linea"></div>
+          
+
+          <ion-grid>
+            <ion-row class="ion-align-items-center">
+              <ion-col size="3">
+                <div><ion-icon slot="start" name="call-outline"></ion-icon></div>
+              </ion-col>
+              <ion-col size="9">
+                <div><p>Contacto: 3152169864</p></div>
+              </ion-col>
+            </ion-row>
+            
+            <ion-row class="ion-align-items-center">
+              <ion-col size="3">
+                <div><ion-icon slot="start" name="home-outline"></ion-icon></div>
+              </ion-col>
+              <ion-col size="9">
+                <div><p>Dirección: Cra 8 # 27 - 01</p></div>
+              </ion-col>
+            </ion-row>
+
+            <ion-row class="ion-align-items-center">
+              <ion-col size="3">
+                <div><ion-icon slot="start" name="mail-outline"></ion-icon></div>
+              </ion-col>
+              <ion-col size="9">
+                <div><p>Correo: entrenaro@gmail.com</p></div>
+              </ion-col>
+            </ion-row>
+
+            <ion-row class="ion-align-items-center">
+              <ion-col size="3">
+                <div><ion-icon slot="start" name="checkmark-done-outline"></ion-icon></div>
+              </ion-col>
+              <ion-col size="9">
+                <div><p>Experiencia: 
+                  1 año en 24/7.
+                  6 meses en smartfit.</p></div>
+              </ion-col>
+            </ion-row>
+
+            <ion-row class="ion-align-items-center">
+              <ion-col size="3">
+                <div><ion-icon slot="start" name="book-outline"></ion-icon></div>
+              </ion-col>
+              <ion-col size="9">
+                <div><p>Estudios: Cultura y deporte.
+                  Alimentación sana.</p></div>
+              </ion-col>
+            </ion-row>
+
+          </ion-grid>
+          <div class="boton">
+            <ion-button   color="light">Editar</ion-button>
+          </div>
+          
+        </div>
+
+      </div>
+      
+    
+  </ion-card>
 </ion-content>

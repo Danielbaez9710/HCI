@@ -1,9 +1,104 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>bandeja_entrada</ion-title>
+
+<ion-header >
+
+  <ion-toolbar >
+
+    <ion-row >
+      <ion-col class="ion-align-items-center menu" >
+        <div >
+          <ion-buttons slot="start" >
+              <ion-back-button ></ion-back-button>
+          </ion-buttons>
+        </div >
+      </ion-col >
+      <ion-col class="ion-align-self-center titulo" >
+          <div ><ion-title class="titulo2" ><b>Bandeja de</b></ion-title></div>
+          <div ><ion-title class="titulo2" ><b>Entrada</b></ion-title></div>
+      </ion-col>
+      <ion-col class="ion-align-self-center home" >
+        <div  ><ion-icon name="home-outline" [routerLink]="['/home']" style="font-size: 30px;"></ion-icon></div>
+      </ion-col>
+    </ion-row>
+
+
   </ion-toolbar>
+
 </ion-header>
 
+
 <ion-content>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Solicitudes</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <div class="cont">
+        <div class="cont1">
+          <div class="lat1a">
+            <p>2022-03-11</p>
+            <p>2:00 - 4:00 pm</p>
+            
+          </div>
+          <div class="lat2a">
+            <p>Entrenamiento</p>
+          </div>
+        </div>
+
+        <div class="cont2">
+          <div class="lat1b">
+            <p><b>Angela Suárez</b></p>
+          </div>
+          <div class="lat2b">
+            <p>⭐⭐⭐⭐</p>
+          </div>
+          
+        </div>
+        
+        <div class="linea"></div>
+        
+        <div class="cont3">
+          <ion-button size="small" fill="outline" color="dark"><p>No Programar</p></ion-button>
+          <ion-button size="small" fill="outline" color="dark"><p>Programar</p></ion-button>
+        </div>
+      </div>
+
+    </ion-card-content>
+
+    <ion-card-content>
+      <div class="cont">
+        <div class="cont1">
+          <div class="lat1a">
+            <p>2022-03-12</p>
+            <p>1:00 - 3:00 pm</p>
+            
+          </div>
+          <div class="lat2a">
+            <p>Entrenamiento</p>
+          </div>
+        </div>
+
+        <div class="cont2">
+          <div class="lat1b">
+            <p><b>Gonzalo Ramirez</b></p>
+          </div>
+          <div class="lat2b">
+            <p>⭐⭐⭐</p>
+          </div>
+          
+        </div>
+        
+        <div class="linea"></div>
+        
+        <div class="cont3">
+          <ion-button size="small" fill="outline" color="dark"><p>No Programar</p></ion-button>
+          <ion-button size="small" fill="outline" color="dark"><p>Programar</p></ion-button>
+        </div>
+      </div>
+
+    </ion-card-content>
+
+  </ion-card>
 
 </ion-content>

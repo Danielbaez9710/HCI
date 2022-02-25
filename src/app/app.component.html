@@ -39,10 +39,14 @@
       <ion-menu-toggle>
         <ion-list>
           <ion-item [routerLink]="['/cuenta']">Mi Perfil</ion-item>
-          <ion-item>Menu Item</ion-item>
-          <ion-item>Menu Item</ion-item>
-          <ion-item>Menu Item</ion-item>
-          <ion-item>Menu Item</ion-item>
+          <ion-item [routerLink]="['/rutinas']">Rutinas</ion-item>
+          <ion-item [routerLink]="['/estadisticas']">Estadisticas</ion-item>
+          <ion-item [routerLink]="['/bandeja-entrada']">Bandeja de entrada</ion-item>
+          <ion-item [routerLink]="['/clientes']">Clientes</ion-item>
+          <ion-item [routerLink]="['/calendario-de-citas']">Calendario de Citas</ion-item>
+          <ion-item [routerLink]="['/chat']">Chat</ion-item>
+          <ion-item [routerLink]="['/ayuda']">Ayuda</ion-item>
+          <ion-item>Cerrar Sesión</ion-item>
         </ion-list>
       </ion-menu-toggle>  
     </ion-content>
