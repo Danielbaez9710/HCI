@@ -43,6 +43,22 @@ const routes: Routes = [
     path: 'chat',
     loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
   },
+  {
+    path: 'modal-calif',
+    loadChildren: () => import('./modal-calif/modal-calif.module').then( m => m.ModalCalifPageModule)
+  },
+  {
+    path: 'cerrar-sesion',
+    loadChildren: () => import('./cerrar-sesion/cerrar-sesion.module').then( m => m.CerrarSesionPageModule)
+  },
+  {
+    path: 'chat2',
+    loadChildren: () => import('./chat2/chat2.module').then( m => m.Chat2PageModule)
+  },
+  {
+    path: 'agenda',
+    loadChildren: () => import('./agenda/agenda.module').then( m => m.AgendaPageModule)
+  },
 ];
 
 @NgModule({

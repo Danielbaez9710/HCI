@@ -1,0 +1,53 @@
+*{
+  font-family: “Roboto”;
+}
+ion-app{
+    background-color: white;
+  }
+  ion-menu{
+    margin-top: 50px;
+    
+  }
+  ion-header{
+    background-color:white;
+  }
+  ion-toolbar{
+    background-color: white;
+    padding: 0 10px;
+  }
+  ion-title{
+    color: #29A18D;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  ion-item{
+    
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+  }
+  .logo{
+      margin: auto;
+      color: #29A18D;
+      text-emphasis-color: blue;
+      ion-icon{
+        width: 30px;
+        height: 30px;
+        
+      }
+      
+      
+  }
+  p{
+    color: #29A18D;
+}
+.healthy{
+    
+    
+    width: 100px;
+    height: 30px;
+  }
+  .healthy_img{
+    
+    width: 100px;
+    height: 30px;
+    
+  }

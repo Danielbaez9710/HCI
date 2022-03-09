@@ -1,36 +1,20 @@
-<style>
-  ion-app{
-    background-color: white;
-  }
-  ion-menu{
-    margin-top: 50px;
-    
-  }
-  ion-header{
-    background-color:white;
-  }
-  ion-toolbar{
-    background-color: white;
-  }
-  ion-title{
-    color: #29A18D;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  ion-item{
-    color: #29A18D;
-    font-family: 'Times New Roman', Times, serif;
-  }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
-</style>
 <ion-app>
   <ion-menu type="push" side="start" menuId="first" contentId="main" >
     <ion-header>
 
       <ion-toolbar >
         <ion-buttons slot="end">
-          <ion-icon (click)="openMenu()" name="arrow-back-outline" style="font-size: 30px;"></ion-icon>
+          <ion-icon (click)="openMenu()" name="home-outline" style="font-size: 30px; "></ion-icon>
         </ion-buttons>
-        <ion-title><b>Healthy</b></ion-title>
+        
+        <div class="healthy" >
+          <img class="healthy_img" src="../../assets/icon/healthy.png" >
+        </div>
+        
       </ion-toolbar>
 
 
@@ -38,16 +22,106 @@
       <ion-content>
       <ion-menu-toggle>
         <ion-list>
-          <ion-item [routerLink]="['/cuenta']">Mi Perfil</ion-item>
-          <ion-item [routerLink]="['/rutinas']">Rutinas</ion-item>
-          <ion-item [routerLink]="['/estadisticas']">Estadisticas</ion-item>
-          <ion-item [routerLink]="['/bandeja-entrada']">Bandeja de entrada</ion-item>
-          <ion-item [routerLink]="['/clientes']">Clientes</ion-item>
-          <ion-item [routerLink]="['/calendario-de-citas']">Calendario de Citas</ion-item>
-          <ion-item [routerLink]="['/chat']">Chat</ion-item>
-          <ion-item [routerLink]="['/ayuda']">Ayuda</ion-item>
-          <ion-item>Cerrar Sesión</ion-item>
+          
+          <ion-item [routerLink]="['/cuenta']">
+            <ion-avatar class="logo" slot="start">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label class="texto">
+              
+              <p >Mi Perfil</p>
+            </ion-label>
+          </ion-item>
+
+          <ion-item [routerLink]="['/rutinas']">
+            <ion-avatar class="logo" slot="start">
+              <ion-icon name="barbell-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label class="texto">
+              
+              <p>Rutinas</p>
+            </ion-label>
+            
+          </ion-item>
+          <ion-item [routerLink]="['/estadisticas']">
+            <ion-avatar class="logo" slot="start">
+              <ion-icon name="bar-chart-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label class="texto">
+              
+              <p>Estadisticas</p>
+            </ion-label>
+            
+          </ion-item>
+
+          <ion-item [routerLink]="['/bandeja-entrada']">
+            <ion-avatar class="logo" slot="start">
+              <ion-icon name="archive-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label class="texto">
+              
+              <p>Bandeja de entrada</p>
+            </ion-label>
+            
+          </ion-item>
+
+          <ion-item [routerLink]="['/clientes']">
+            <ion-avatar class="logo" slot="start">
+              <ion-icon name="people-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label class="texto">
+              
+              <p>Clientes</p>
+            </ion-label>
+            
+          </ion-item>
+
+          <ion-item [routerLink]="['/calendario-de-citas']">
+            <ion-avatar class="logo" slot="start">
+              <ion-icon name="calendar-number-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label class="texto">
+              
+              <p>Calendario de Citas</p>
+            </ion-label>
+            
+          </ion-item>
+
+          <ion-item [routerLink]="['/chat']">
+            <ion-avatar class="logo" slot="start">
+              <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label class="texto">
+              
+              <p>Chat</p>
+            </ion-label>
+            
+          </ion-item>
+
+          <ion-item [routerLink]="['/ayuda']">
+            <ion-avatar class="logo" slot="start">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label class="texto">
+              
+              <p>Ayuda</p>
+            </ion-label>
+            
+          </ion-item>
+
+          <ion-item (click)="out()" >
+            <ion-avatar class="logo" slot="start">
+              <ion-icon name="exit-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label class="texto">
+              
+              <p>Cerrar Sesión</p>
+            </ion-label>
+            
+          </ion-item>
+
         </ion-list>
+
       </ion-menu-toggle>  
     </ion-content>
   </ion-menu>

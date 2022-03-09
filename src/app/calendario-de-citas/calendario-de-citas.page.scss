@@ -1,24 +1,31 @@
-
-ion-header{
-background-color: white;
-
+*{
+  font-family: “Roboto”;
 }
-ion-card-subtitle{
+ion-header{
+  background-color: white;
+  margin: auto;
+  }
+  ion-card-subtitle{
     text-align: center;
     font-size: 14px;
 }
 ion-toolbar{
-width: 70%;margin-top:40px ; margin-left: auto;margin-right: auto;
-
+  width: 70%;margin-top:40px ; margin-left: auto;margin-right: auto;
+  ion-row{
+    box-shadow: 0 3px #187464;
+  background-color: #29A18D;border-radius: 1em;height: 50px;margin: auto;
+  }
 }
-ion-row{
 
-background-color: #29A18D;border-radius: 1em;
-}
 .menu{
 width: 20%;
 color: white;
 }
+
+.titulo{
+    border-right: solid white 1px;
+    border-left: solid white 1px;
+  }
 .titulo2{
 font-size: 15px;
 }

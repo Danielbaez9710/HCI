@@ -12,7 +12,7 @@
         </div >
       </ion-col >
       <ion-col class="ion-align-self-center titulo" >
-          <div ><ion-title class="titulo2" ><b>Citas</b></ion-title></div>
+          <div ><ion-title class="titulo2" ><b>Agenda</b></ion-title></div>
       </ion-col>
       <ion-col class="ion-align-self-center home" >
         <div  ><ion-icon name="home-outline" [routerLink]="['/home']" style="font-size: 30px;"></ion-icon></div>
@@ -23,7 +23,24 @@
 
 </ion-header>
 
-
 <ion-content>
-  <button [routerLink]="['/agenda']">agenda</button>
+  <div class="cont">
+    <div class="cont1">
+      <p><b>1 Febrero</b></p>
+    </div>
+
+    <div class="cont2">
+      <div class="lat1">
+        <p>Hora: 7:00 - 9:00 am <br>
+          Cliente: Sandra Avila <br>
+          Dirección: Cra 5#23-06 <br>
+          Tiempo: 2 h
+        </p>
+      </div>
+      <div class="lat2">
+        <button class="boton">Editar</button>
+        <button class="boton">Chat</button>
+      </div>
+    </div>
+  </div>
 </ion-content>

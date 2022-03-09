@@ -12,7 +12,7 @@
         </div >
       </ion-col >
       <ion-col class="ion-align-self-center titulo" >
-          <div ><ion-title class="titulo2" ><b>Ayuda</b></ion-title></div>
+          <div ><ion-title class="titulo2" ><b>Chat</b></ion-title></div>
       </ion-col>
       <ion-col class="ion-align-self-center home" >
         <div  ><ion-icon name="home-outline" [routerLink]="['/home']" style="font-size: 30px;"></ion-icon></div>
@@ -25,32 +25,45 @@
 
 
 <ion-content>
-  <ion-subtitle>
-    <b>Soporte</b>
-  </ion-subtitle>
-  <div class="cont">
-    <p style style="line-height: 100%">Correo:<br>
-    support@email.com<br><br>
-    Para respuestas rapidas, diligenciar:<br>
-    - Nombre<br>
-    - Ciudad<br>
-    - Teléfono<br>
-    - Motivo Contacto
-  </p>
-  </div>
+  <div class="cont" >
+    <div class="cont1" slot="start">
+      
 
-  <ion-subtitle>
-    <b>Preguntas Frecuentes</b>
-  </ion-subtitle>
-  <div class="cont">
-    <p style style="line-height: 100%">
-      1. Cómo actualizar la app<br>
-      2. Al hacer el pedido del servicio, qué debo hacer<br>
-      3. Cómo valorar el servicio<br>
-      4. La persona no se presentó, qué debo hacer<br>
-      5. Cómo conseguir más clientes<br>
+      
+        <p class="p1"><b>Ana María </b> <br>
+          Tengo algunas .....
+        </p>
+   
     
-  </p>
+
+    </div>
+
+    <div class="cont2" slot="end">
+      
+      
+        <p class="p1"><b>Juan </b> <br>
+          Disculpa, tengo una....
+        </p>
+
+      
+    </div>
+
+    <div class="cont1">
+      
+        
+      <p class="p1"><b>Angélica </b> <br><br>
+        Hola
+      </p>
+      
+
+      
+    </div>
+
+    <div class="input">
+      <input type="text" placeholder="Escribe un mensaje">
+      <ion-icon name="happy-outline"></ion-icon>
+    </div>
+    
   </div>
   <div class="healthy">
     <img class="healthy_img" src="../../assets/icon/healthy.png" >

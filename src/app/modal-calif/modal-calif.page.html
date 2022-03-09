@@ -1,0 +1,54 @@
+
+
+<ion-header>
+  <ion-toolbar *ngIf="show">
+    <ion-title>modal-calif</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="cont">
+    <div class="cont1">
+      <div class="lat1">
+        <ion-avatar>
+          <img src="../../assets/icon/user1.png">
+        </ion-avatar>
+      </div>
+
+      <div class="lat2">
+        
+        <div class="c_boton">
+          <p><b>Humberto López</b></p>
+          <p>Cliente</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="cont2">
+      <p>Califica tu experiencia</p>
+      <div class="calif">
+        <ion-icon name="star-outline" class="star" ></ion-icon>
+        <ion-icon name="star-outline" class="star" ></ion-icon>
+        <ion-icon name="star-outline" class="star" ></ion-icon>
+        <ion-icon name="star-outline" class="star" ></ion-icon>
+        <ion-icon name="star-outline" class="star" ></ion-icon>
+      </div>
+      
+      <div class="inp">
+        <input type="text" placeholder="Escribe tu experiencia">
+      </div>
+
+      <div class="cont_bot">
+        <button class="boton" (click)="dismiss()">Guardar</button>
+      </div>
+
+      
+    </div>
+    
+  </div>
+  <div class="healthy">
+    <img class="healthy_img" src="../../assets/icon/healthy.png" >
+  </div>
+</ion-content>

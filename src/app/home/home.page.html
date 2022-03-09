@@ -1,5 +1,5 @@
 
-<ion-header >
+<ion-header class="ion-no-border">
 
   <ion-toolbar >
 
@@ -12,7 +12,7 @@
         </div >
       </ion-col >
         <ion-col class="ion-align-self-center titulo" >
-          <div ><ion-title class="titulo2" ><b>Healthy</b></ion-title></div>
+          <div ><ion-title class="titulo2" ><b><i>Healthy</i></b></ion-title></div>
         </ion-col>
       <ion-col class="ion-align-self-center home" >
         <div  ><ion-icon name="person-outline" [routerLink]="['/cuenta']" style="font-size: 25px;"></ion-icon></div>
@@ -24,30 +24,35 @@
 </ion-header>
 
 <ion-content >
-
+  <div class="dibujo">
+    <img src="../../assets/icon/instructor.png" alt="Instructor" class="dibujo_img">
+  </div>
+  
   <ion-card class="card">
+    
+
     <div class="band">
-      <ion-button size="small" color="dark" [routerLink]="['/bandeja-entrada']" routerLinkActive="router-link-active" >Bandeja de Entrada</ion-button>
+      <button  color="dark" [routerLink]="['/bandeja-entrada']" class="butt" >Bandeja de Entrada</button>
     </div>
 
-    <div style="border-top: solid black 3px;"></div>
+    
     
     <ion-card-content>
-      <ion-item-divider >
-        <ion-label>
-        
-        </ion-label>
-      </ion-item-divider>
+      
       <div class="caja">
         <p ><b>Estado Actual</b></p>
         <div class="disponible">
         
-        <ion-button size="small" fill="outline" color="dark">No Disponible</ion-button>
-        <ion-button size="small" fill="outline" color="dark">Disponible</ion-button>
+        <button size="small" class="bot" (click)="enableDisableRule(0)" [style.background-color]="toggle[0] ? '#FFFFFF' : '#29A18D'" fill="outline" color="dark">No Disponible</button>
+        <button size="small"  class="bot"  (click)="enableDisableRule(1)" [style.background-color]="toggle[1] ? '#FFFFFF' : '#29A18D'" fill="outline" color="dark">Disponible</button>
           
         </div>
       </div>
     </ion-card-content>
+
+    <div class="healthy">
+      <img class="healthy_img" src="../../assets/icon/healthy.png" >
+    </div>
   </ion-card>
 </ion-content>
 

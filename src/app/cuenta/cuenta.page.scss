@@ -1,23 +1,61 @@
-  
+  *{
+    font-family: “Roboto”;
+  }
   ion-header{
     background-color: white;
+    margin: auto;
     
-  }
-  ion-card-subtitle{
-      text-align: center;
-      font-size: 14px;
   }
   ion-toolbar{
     width: 70%;margin-top:40px ; margin-left: auto;margin-right: auto;
- 
+    ion-row{
+      box-shadow: 0 3px #187464;
+      background-color: #29A18D;
+      border-radius: 1em;
+      height: 50px;
+    }
+  }
+  ion-card{
+    box-shadow: none;
+    margin-left: 15px;
+    box-shadow: 0 5px #187464;
+    border-radius: 2em;
+    
+    ion-card-title{
+      text-align: center;
+      font-size: 20px;
+      color: black;
+      
+    }
   }
   ion-row{
     
-    background-color: #29A18D;border-radius: 1em;
+    
+    .logo{
+      
+      padding: 15px;
+    }
   }
   .menu{
     width: 20%;
     color: white;
+    
+    .back{
+      width: 90%;
+      margin: auto;
+     
+    }
+    ion-back-button{
+      text-align: center;
+      margin-right: 10px;
+      
+    }
+    
+    
+  }
+  .titulo{
+    border-right: solid white 1px;
+    border-left: solid white 1px;
   }
   .titulo2{
     font-size: 15px;
@@ -25,6 +63,9 @@
   .home{
     width: 20%;
     color: white;
+    
+    
+    
   }
   ion-title{
     color: white;
@@ -51,13 +92,14 @@
       }
       .text{
           text-align: center;
-          
+          font-size: 20px;
       }
   }
   .cont2{
       background: #29A18D;
       color: white;
       width: 100%;
+      
       .linea{
         border-top: solid white 3px;
         width: 100%;
@@ -65,9 +107,12 @@
       ion-col{
           p{
             font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+
           }
           ion-icon{
-              font-size: 20px;
+              font-size: 30px;
+              
           }
       }
       h2{
@@ -76,8 +121,23 @@
       }
       .boton{
         text-align: center;
-        ion-button{
-            border-radius: 2em;
+        .boton2 {
+          display: inline-block;
+          padding: 15px 25px;
+          font-size: 16px;
+          cursor: pointer;
+          text-align: center;	
+          text-decoration: none;
+          outline: none;
+          color: black;
+          background-color: #fff;
+          border: none;
+          border-radius: 15px;
+          margin-bottom: 20px;
+          box-shadow: 0 5px #666;
+        }
+        .boton2:hover {
+          border: solid black 1px;
         }
         
        }

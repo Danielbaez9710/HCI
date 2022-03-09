@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ModalController } from '@ionic/angular';
+import { ModalCalifPage } from './../modal-calif/modal-calif.page';
 @Component({
   selector: 'app-clientes',
   templateUrl: './clientes.page.html',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientesPage implements OnInit {
 
-  constructor() { }
+  constructor(public modal:ModalController ) { }
 
   ngOnInit() {
   }
+  async openMovie() {
+    const modal = await this.modal.create({
+      component: ModalCalifPage
+    });
 
+    return await modal.present();
+  }
 }

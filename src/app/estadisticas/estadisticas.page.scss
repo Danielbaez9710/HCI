@@ -1,24 +1,31 @@
-
+*{
+    font-family: “Roboto”;
+}
 ion-header{
 background-color: white;
-
+margin: auto;
 }
 ion-card-subtitle{
     text-align: center;
     font-size: 14px;
 }
 ion-toolbar{
-width: 70%;margin-top:40px ; margin-left: auto;margin-right: auto;
-
-}
-ion-row{
-
-background-color: #29A18D;border-radius: 1em;
+    width: 70%;margin-top:40px ; margin-left: auto;margin-right: auto;
+    
+    ion-row{
+        box-shadow: 0 3px #187464;
+        background-color: #29A18D;border-radius: 1em;height: 50px;
+      }
 }
 .menu{
 width: 20%;
 color: white;
 }
+
+.titulo{
+    border-right: solid white 1px;
+    border-left: solid white 1px;
+  }
 .titulo2{
 font-size: 12px;
 }
@@ -29,4 +36,72 @@ color: white;
 ion-title{
 color: white;
 font-family: 'Times New Roman', Times, serif;
+}
+
+
+ion-card{
+    box-shadow: none;
+
+    ion-card-subtitle{
+      text-align: center;
+      font-size: 14px;
+      color: black;
+      
+    }
+  }
+.cont1{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    .logo{
+        text-align: center;
+        ion-icon{
+          color: gray;
+          
+          width: 100px;
+          height: 100px;
+        }
+    }
+}
+.cont2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FEAA71;
+    padding: 10px 10px;
+    border-radius: 10px;
+    .caja1{
+        display: flex;
+        flex-direction: row;
+        border: solid #29A18D 1px;
+        margin-bottom: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 3px #29A18D;
+        .caja1a{
+            width: 75%;
+            border-right: solid #29A18D 3px;
+            ion-icon{
+                width: 30px;
+                height: 30px;
+            }
+            p{
+                font-size: 16px;
+                color:black;
+            }
+        }
+        .caja1b{
+            display: flex;
+            
+            width: 25%;
+            .text{
+                margin: auto;
+            }
+            p{
+                font-size: 16px;
+                color:black;
+                text-align: center;
+            }
+        }
+    }
 }

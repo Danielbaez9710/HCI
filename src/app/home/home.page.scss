@@ -1,51 +1,41 @@
-#container {
-  text-align: center;
+*{
+  font-family: “Roboto”;
+}
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-card{
+  box-shadow: none;
 }
 p{
   text-align: center;
   color: black;
 }
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-  
-}
 ion-header{
   background-color: white;
+  margin: auto;
 }
 ion-toolbar{
   width: 70%;margin-top:40px ; margin-left: auto;margin-right: auto;
-
-}
-ion-row{
   
-  background-color: #29A18D;border-radius: 1em;
+  ion-row{
+    
+    background-color: #29A18D;border-radius: 1em;
+    height: 50px;
+    box-shadow: 0 3px #187464;
+  }
 }
 .menu{
   width: 20%;
   color: white;
 }
+
+.titulo{
+  border-right: solid white 1px;
+  border-left: solid white 1px;
+  
+}
 .titulo2{
-  font-size: 15px;
+  font-size: 18px;
+  
 }
 .home{
   width: 20%;
@@ -84,21 +74,81 @@ ion-title{
   border: solid black 2px;
 }
 .caja{
-  border: solid black 1px;
-  padding: 4px;
+  border: solid #29A18D 1px;
+  padding: 5px;
   border-radius: 1em;
+  height: 100px; width: 220px;
+  margin: auto;
+  .disponible{
+    margin-top: 15px;
+  }
+  .bot{
+    width: 100px;
+    height: 40px;
+    border: solid #29A18D 1px;
+
+    border-radius: 15px;
+  }
 }
 .band{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 .card{
+    
+  // transform: translateX(-55%) translateY(-30%);
+  //     top: 50%;
+  //     left: 50%;
   
+}
 
-  transform: translateX(-55%) translateY(-20%);
-      top: 50%;
-      left: 50%;
-      
+.butt {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 40px;
+  width: 220px;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #29A18D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #187464;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.butt:active {
+  background-color: #fff;
+  color: black;
+  border: solid black 1px;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.healthy{
+  
+  margin: auto;
+  width: 120px;
+  height: 30px;
+}
+.healthy_img{
+  width: 120px;
+  height: 30px;
+  
+}
+.dibujo{
+  
+  margin: auto;
+  width: 160px;
+  height: 200px;
+  margin-top: 20px;
+}
+.dibujo_img{
+  width: 160px;
+  height: 200px;
 }
